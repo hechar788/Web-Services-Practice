@@ -11,5 +11,5 @@ Profile page takes name argument from url link to return a name object to the ht
   eg. 127.0.0.1:8080/profile?name=Hector
 
 Version 1.1
--profile.html added for profile page construction inherits from index.html
--updated profile name argument, 'get' method, to return empty string instead of None in unkown name variable case.
+- Profile.html added for profile page construction inherits from index.html
+- Updated profile name argument, 'get' method, to return empty string instead of None in unkown name variable case.
