@@ -1,5 +1,5 @@
-# Web-Services-Project
-ARA-BCDE Web services project
+# Web-Services-Practce
+ARA-BCDE Web services practice
 
 Version 1.0
 - Initial flask website structure created with basic home and profile page.
@@ -13,3 +13,9 @@ Profile page takes name argument from url link to return a name object to the ht
 Version 1.1
 - Profile.html added for profile page construction inherits from index.html
 - Updated profile name argument, 'get' method, to return empty string instead of None in unkown name variable case.
+
+Version 2.0 (Current)
+- Added session functionality for user logins.
+- Created logout page which removes user from session and redirects back to login page.
+- Updated html templates to be centered with better use of block features and inheritance.
+- Added redirection functionality for bad url paths
