@@ -1,11 +1,17 @@
-{% extends "index.html" %}{% block content %}
+{% extends 'index.html' %}
 
+{% block title %}
 <h1>Profile page</h1>
-<body>
+{% endblock %}
 
-    hello {{ value }} 
 
-</body>
+{% block content %}
 
+<form action="#" method="post">
+    <p>Name: </p>
+    <p><input type="text" name="nm"/></p>
+    <p><input type="submit" value="submit"/></p>
+</form>
 
 {% endblock %}
+

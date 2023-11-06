@@ -1,0 +1,17 @@
+{% extends 'index.html' %}
+
+
+
+{% block title %}
+<h1>You have been logged out.</h1>
+{% endblock %}
+
+
+{% block content %}
+<form action=# method='post'>
+    <p>Click here to return to login if not done automatically. (5 seconds)</p>
+    <p><input type='submit' value='submit'/></p>
+</form> 
+
+<meta http-equiv="Refresh" content="5; url='127.0.0.1:8080/profile'" />
+{% endblock %}
