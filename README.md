@@ -1,4 +1,4 @@
-# Web-Services-Practce
+# Web-Services-Practice
 ARA-BCDE Web services practice
 
 Version 1.0
