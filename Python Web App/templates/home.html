@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% block title %}
+    <link rel="stylesheet" type="text/css" href="/static/css/home.css"/>
+    <title> Demerit Points Calculator </title>
+    <h1> Demerit Points Calculator </h1>
+
+    <script>
+        function ResetFields()
+        {
+            document.getElementById("driving_speed").value = "";
+            document.getElementById("speed_limit").value = "";
+            document.getElementById("holiday_period").checked = false;
+            document.getElementById("flash_msgs").style.display='none';
+        }
+    </script>
+
+{% endblock %}
+
+{% block content %}
+
+    <div class="container" id="flash_msgs">
+    {% if get_flashed_messages() %}
+        {% for msg in get_flashed_messages() %}
+            <p>{{msg}}</p>
+        {%endfor%}
+    {% endif %}
+    </div>
+
+    <form action="#" method="post">
+        <p>Driving Speed:</p>
+        <p><input type="text" name="driving_speed" id="driving_speed"/></p>
+        <p>Speed Limit:</p>
+        <p><input type="text" name="speed_limit" id="speed_limit"/></p>
+
+        <div class="grid-container">
+            <div class="grid-child">
+            Holiday Period<input type="checkbox" value=True name="holiday_period" id="holiday_period">
+            <input type="button" value="Reset" onclick="ResetFields();">
+            </div>
+        </div>
+        <p><input type="submit" value="Calculate"/></p>
+    </form>
+{% endblock %}
+
